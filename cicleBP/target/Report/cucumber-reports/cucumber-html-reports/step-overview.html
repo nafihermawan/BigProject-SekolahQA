@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>Project Name</td>
+                          <td>1</td>
+                        <td>23 Oct 2021, 10:36</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">BoardStep.clickBoard()</td>
+                <td>1</td>
+                <td class="duration" data-value="3281718191">3s 281ms</td>
+                <td class="duration" data-value="3281718191">3s 281ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BoardStep.creatNewList(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="9589132922">9s 589ms</td>
+                <td class="duration" data-value="9589132922">9s 589ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BoardStep.listCreataed()</td>
+                <td>1</td>
+                <td class="duration" data-value="2233018296">2s 233ms</td>
+                <td class="duration" data-value="2233018296">2s 233ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BoardStep.openLoginPage()</td>
+                <td>1</td>
+                <td class="duration" data-value="1447592950">1s 447ms</td>
+                <td class="duration" data-value="1447592950">1s 447ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BoardStep.selectGroup()</td>
+                <td>1</td>
+                <td class="duration" data-value="2827065014">2s 827ms</td>
+                <td class="duration" data-value="2827065014">2s 827ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">CheckInsStep.and()</td>
+                <td>2</td>
+                <td class="duration" data-value="4390012954">4s 390ms</td>
+                <td class="duration" data-value="2195006477">2s 195ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">CheckInsStep.and2()</td>
+                <td>2</td>
+                <td class="duration" data-value="4414957007">4s 414ms</td>
+                <td class="duration" data-value="2207478503">2s 207ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">CheckInsStep.checkInsCreated()</td>
+                <td>1</td>
+                <td class="duration" data-value="2260919583">2s 260ms</td>
+                <td class="duration" data-value="2260919583">2s 260ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">CheckInsStep.clickAddCheckIns()</td>
+                <td>1</td>
+                <td class="duration" data-value="2496255990">2s 496ms</td>
+                <td class="duration" data-value="2496255990">2s 496ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">CheckInsStep.clickQuestionCheckIns()</td>
+                <td>1</td>
+                <td class="duration" data-value="2206602857">2s 206ms</td>
+                <td class="duration" data-value="2206602857">2s 206ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">CheckInsStep.commentAdded()</td>
+                <td>1</td>
+                <td class="duration" data-value="56236900">056ms</td>
+                <td class="duration" data-value="56236900">056ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">CheckInsStep.inputComment(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="5005319196">5s 005ms</td>
+                <td class="duration" data-value="5005319196">5s 005ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">CheckInsStep.setCheckIns(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="4623242582">4s 623ms</td>
+                <td class="duration" data-value="4623242582">4s 623ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">CheckInsStep.userOpenPage()</td>
+                <td>2</td>
+                <td class="duration" data-value="299970">000ms</td>
+                <td class="duration" data-value="149985">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">GroupChatStep.clickGroup()</td>
+                <td>1</td>
+                <td class="duration" data-value="5193527860">5s 193ms</td>
+                <td class="duration" data-value="5193527860">5s 193ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">GroupChatStep.clickGroupChat()</td>
+                <td>1</td>
+                <td class="duration" data-value="2270759303">2s 270ms</td>
+                <td class="duration" data-value="2270759303">2s 270ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">GroupChatStep.messageSent()</td>
+                <td>1</td>
+                <td class="duration" data-value="40120">000ms</td>
+                <td class="duration" data-value="40120">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">GroupChatStep.openLoginPage()</td>
+                <td>1</td>
+                <td class="duration" data-value="21510975">021ms</td>
+                <td class="duration" data-value="21510975">021ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">GroupChatStep.test(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2425194198">2s 425ms</td>
+                <td class="duration" data-value="2425194198">2s 425ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Hooks.afterTest()</td>
+                <td>5</td>
+                <td class="duration" data-value="25286053509">25s 286ms</td>
+                <td class="duration" data-value="5057210701">5s 057ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Hooks.openBrowser()</td>
+                <td>5</td>
+                <td class="duration" data-value="29035734528">29s 035ms</td>
+                <td class="duration" data-value="5807146905">5s 807ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SignInStep.openLoginPage()</td>
+                <td>1</td>
+                <td class="duration" data-value="183806">000ms</td>
+                <td class="duration" data-value="183806">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SignInStep.signInGoogle()</td>
+                <td>1</td>
+                <td class="duration" data-value="37788">000ms</td>
+                <td class="duration" data-value="37788">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SignInStep.signInSucces()</td>
+                <td>1</td>
+                <td class="duration" data-value="5357900909">5s 357ms</td>
+                <td class="duration" data-value="5357900909">5s 357ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>24</td>
+              <td>35</td>
+              <td class="duration">1m 54s 423ms</td>
+              <td class="duration">3s 269ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

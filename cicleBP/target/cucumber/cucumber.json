@@ -1,0 +1,596 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11801005992,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Add new list",
+        "description": "",
+        "id": "board;add-new-list",
+        "after": [
+          {
+            "result": {
+              "duration": 6264762262,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1447592950,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user opens the web and chooses to login using a google account",
+            "match": {
+              "location": "BoardStep.openLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2827065014,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user selects the available team",
+            "match": {
+              "location": "BoardStep.selectGroup()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3281718191,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user selects the menu board",
+            "match": {
+              "location": "BoardStep.clickBoard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9589132922,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user click add list and user input \"New Test List\" as list name and user click button create",
+            "match": {
+              "arguments": [
+                {
+                  "val": "New Test List",
+                  "offset": 40
+                }
+              ],
+              "location": "BoardStep.creatNewList(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2233018296,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "list already created",
+            "match": {
+              "location": "BoardStep.listCreataed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@AddList"
+          }
+        ]
+      }
+    ],
+    "name": "Board",
+    "description": "I want to add list in the board",
+    "id": "board",
+    "keyword": "Feature",
+    "uri": "features/Board.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Dev"
+      },
+      {
+        "line": 1,
+        "name": "@Board"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4437154692,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Create Check Ins",
+        "description": "",
+        "id": "checckins;create-check-ins",
+        "after": [
+          {
+            "result": {
+              "duration": 733527030,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 151151,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I want to open the web page",
+            "match": {
+              "location": "CheckInsStep.userOpenPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2158046648,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i select group",
+            "match": {
+              "location": "CheckInsStep.and()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2173528858,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i selects board",
+            "match": {
+              "location": "CheckInsStep.and2()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2496255990,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i click button add check ins",
+            "match": {
+              "location": "CheckInsStep.clickAddCheckIns()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4623242582,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i input \"Test CheckIns\" as question, select day and click collecting answer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test CheckIns",
+                  "offset": 9
+                }
+              ],
+              "location": "CheckInsStep.setCheckIns(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2260919583,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "checkins already created",
+            "match": {
+              "location": "CheckInsStep.checkInsCreated()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@CreateCheckIns"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4220539971,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Add comment in the question",
+        "description": "",
+        "id": "checckins;add-comment-in-the-question",
+        "after": [
+          {
+            "result": {
+              "duration": 6099249519,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 148819,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I want to open the web page",
+            "match": {
+              "location": "CheckInsStep.userOpenPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2231966306,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "i select group",
+            "match": {
+              "location": "CheckInsStep.and()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2241428149,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "i selects board",
+            "match": {
+              "location": "CheckInsStep.and2()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2206602857,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "i click Question check ins",
+            "match": {
+              "location": "CheckInsStep.clickQuestionCheckIns()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5005319196,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "i input \"Test Comment\" as comment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test Comment",
+                  "offset": 9
+                }
+              ],
+              "location": "CheckInsStep.inputComment(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56236900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "comment added",
+            "match": {
+              "location": "CheckInsStep.commentAdded()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@AddComment"
+          }
+        ]
+      }
+    ],
+    "name": "ChecckIns",
+    "description": "I want to use this template for my feature file",
+    "id": "checckins",
+    "keyword": "Feature",
+    "uri": "features/CheckIns.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Dev"
+      },
+      {
+        "line": 1,
+        "name": "@CheckIns"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4135464090,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Groupchat funcionality",
+        "description": "",
+        "id": "group-chat;groupchat-funcionality",
+        "after": [
+          {
+            "result": {
+              "duration": 6098127552,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21510975,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "i open the web page and user click sign in with google",
+            "match": {
+              "location": "GroupChatStep.openLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5193527860,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i select teams",
+            "match": {
+              "location": "GroupChatStep.clickGroup()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2270759303,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i click group chat",
+            "match": {
+              "location": "GroupChatStep.clickGroupChat()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2425194198,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i Input \"Test Hallo\" in the chat field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test Hallo",
+                  "offset": 9
+                }
+              ],
+              "location": "GroupChatStep.test(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40120,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "messages sent",
+            "match": {
+              "location": "GroupChatStep.messageSent()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@PositiveCase"
+          }
+        ]
+      }
+    ],
+    "name": "Group Chat",
+    "description": "I want to send messages in the group chat",
+    "id": "group-chat",
+    "keyword": "Feature",
+    "uri": "features/GroupChat.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Dev"
+      },
+      {
+        "line": 1,
+        "name": "@GroupChat"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4441569783,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "User SignIn with google account",
+        "description": "",
+        "id": "login;user-signin-with-google-account",
+        "after": [
+          {
+            "result": {
+              "duration": 6090387146,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 183806,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user open the web page",
+            "match": {
+              "location": "SignInStep.openLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37788,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click sign in with google",
+            "match": {
+              "location": "SignInStep.signInGoogle()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5357900909,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enter the dashboard",
+            "match": {
+              "location": "SignInStep.signInSucces()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "I want to login with google account",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "features/SignIn.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Dev"
+      },
+      {
+        "line": 1,
+        "name": "@Login"
+      }
+    ]
+  }
+]
